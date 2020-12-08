@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{%block title %}
+    polls detail
+{% endblock %}
+
+{% block content %}
+{% if request.user.username %} 
+    <h1>{{ question.question_text }}</h1>
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    {{ formset }}
+    <form action="{% url 'polls:vote' question.id %}" method="post">
+    {% csrf_token %}
+    {% for choice in question.choice_set.all %}
+        <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+        <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+    {% endfor %}
+    <button type="submit" class="btn btn-primary">Выбрать</button>
+    </form>
+{% else %}
+    <h1>Авторизирутесь, чтобы увидеть доступные опросы</h1>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+question create page
+{% endblock%}
+
+{% block content%}
+<h1> Задайте название для нового опроса</h1>
+<form action="{% url 'polls:question_create' %}" method="POST">
+    <div class="form-group">
+        {% csrf_token %}
+        {{ form }}      
+    </div>
+    <button type="submit" class="btn btn-primary">Создать</button>
+</form>
+{% endblock %}
