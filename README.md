@@ -32,10 +32,15 @@ h1 Проект Polls (skillfactory)
         > nano .env
         и прописываем следующие настройки:
         > SECRET_KEY='et3%q!e%d0810%(mc2#p!*owxn36eb!2vyt6+o-*(es8&b&lc&'
+        >
         > DB_NAME='db_name'
+        >
         > DB_USER='username'
+        >
         > DB_PASSWORD='password'
+        >
         > DB_HOST=127.0.0.1
+        >
         > DB_PORT=5432
     * cd ..
     * устанавливаем нужные пакеты
