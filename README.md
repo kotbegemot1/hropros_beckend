@@ -10,6 +10,7 @@ https://final-proj-sf.herokuapp.com/polls/.
 Неавторизованный пользователь не видит опросов
 ***
 Для того чтобы запусть проект у себе на компьютере(на примере ubuntu) нужно:
+-----------------------------------
 1. Установить и настроить postgresql:
     * устанавливаем postgresql
         > sudo apt install postgresql postgresql-contrib
