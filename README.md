@@ -4,7 +4,8 @@ h1 Проект Polls (skillfactory)
 ***
 1. Установить и настроить postgresql:
     Выполняется в терминале
-    * sudo apt install postgresql postgresql-contrib
+    * установить postgresql
+        > sudo apt install postgresql postgresql-contrib
     * sudo -u postgres psql
     * CREATE DATABASE db_name;
     * CREATE USER username WITH PASSWORD 'password';
