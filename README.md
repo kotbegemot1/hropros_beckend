@@ -1,7 +1,9 @@
 h1 Проект Polls (skillfactory)
 =====================
+Для того, чтобы посмотреть проект не устанавливая к себе на компьютер, можно перейти по ссылке
+https://final-proj-sf.herokuapp.com/polls/
+
 Для того чтобы запусть проект у себе на компьютере(на примере ubuntu) нужно:
-***
 1. Установить и настроить postgresql:
     * устанавливаем postgresql
         > sudo apt install postgresql postgresql-contrib
